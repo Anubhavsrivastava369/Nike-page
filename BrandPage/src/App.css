@@ -1,164 +1,120 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-* {
+*{
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  box-sizing: border-box;
 }
-
-.navigation {
+.navigation{
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
+  justify-content: space-around;
   height: 72px;
 }
-
-.navigation ul {
-  list-style: none;
-  display: flex;
-  gap: 24px;
+.navigation ul{
+    list-style: none;
+    display: flex;
+    gap: 24px;
 }
-
-ul li:hover {
+ul li:hover{
   cursor: pointer;
 }
-
-.navigation button {
-  background: #D01C28;
-  color: white;
-  padding: 6px 16px;
-  border: none;
-  outline: none;
-  cursor: pointer;
+.navigation button{
+   background: #D01C28;
+   color: white;
+   padding: 6px, 16px, 6px, 16px;
+   height: 31px;
+   width: 75px;
+   border: none;
+   outline: none;
 }
-
-.navigation button:hover {
+.navigation button:hover{
   background: #bf1a25;
 }
-
-.hero-section {
+.hero-section{
   display: flex;
-  flex-wrap: wrap;
+  height: 613px;
+  max-width: 1125px;
   align-items: center;
   justify-content: space-evenly;
-  max-width: 100%;
-  margin: auto;
-  padding: 20px;
-}
+  margin: auto auto;
+  margin-left: 250px;
 
-.hero-content {
+}
+.hero-content{
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  max-width: 90%;
+  gap:36px;
 }
-
-.hero-section .hero-image img {
-  max-width: 100%;
-  height: auto;
+.hero-section .hero-image img{
+  width: 530px;
+  height: 488px;
 }
-
-.hero-content h1 {
+.hero-content h1{
   font-weight: 800;
-  font-size: 6vw;
-  line-height: 1.2em;
+  font-size: 108px;
+  line-height: 102px;
+  width: 595px;
+  height: 306px;
 }
-
-.hero-content p {
+.hero-content p{
+  width: 404px;
+  height: 91px;
   font-weight: 600;
-  font-size: 1rem;
-  line-height: 1.5;
+  font-size: 16px;
+  line-height: 24px;
   color: #5A5959;
 }
-
-.hero-content .hero-btn {
+.hero-content .hero-btn{
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  gap: 40px;
+  width: 331px;
+  height: 41px;
 }
-
-.hero-content .hero-btn .p {
+.hero-content .hero-btn .p{
   background: #D01C28;
+  width: (150px)px;
+  height: (41px)px;
+  padding: 6px 16px 6px 16px;
+  gap: 10px;
   color: white;
   border: none;
   outline: none;
   font-weight: 600;
-  font-size: 1rem;
-  padding: 10px 20px;
-  cursor: pointer;
+  font-size: 24px;
+  line-height: 30px;
 }
-
-.hero-content .hero-btn .p:hover {
+.hero-content .hero-btn .p:hover{
   background: #890d15;
 }
-
-.hero-section .hero-btn .s {
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
-  font-size: 1rem;
+.hero-section .hero-btn .s{
+  Font:Inter;
+  font-weight:600;
+  font-size: 24px;
+  line-height: 29.05px;
   color: grey;
-  padding: 10px 20px;
-  cursor: pointer;
+  width: (150px)px;
+  height: (41px)px;
+  padding: 6px 16px 6px 16px;
 }
 
-.hero-content .lower {
+.hero-content .lower{
   display: flex;
   flex-direction: column;
+  width: 132px;
+  height: 38px;
   gap: 10px;
 }
-
-.hero-content .lower .p {
-  font-size: 1rem;
+.hero-content .lower .p{
+  font-size: 16px;
   font-weight: 600;
+  line-height: 24px;
 }
-
-.hero-content .lower .image {
+.hero-content .lower .image{
+  width: 80px;
+  height: 32px;
   display: flex;
   gap: 16px;
 }
-
-button:hover, img:hover {
+button:hover ,img:hover{
   cursor: pointer;
-}
-
-@media (max-width: 768px) {
-  .navigation {
-    flex-direction: column;
-    padding: 10px 20px;
-    height: auto;
-  }
-
-  .navigation ul {
-    gap: 12px;
-    flex-direction: column;
-  }
-
-  .hero-section {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .hero-content h1 {
-    font-size: 8vw; 
-  }
-
-  .hero-content .hero-btn {
-    justify-content: center;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-content h1 {
-    font-size: 10vw;
-  }
-
-  .hero-content p {
-    font-size: 0.9rem;
-  }
-
-  .hero-content .hero-btn .p, .hero-section .hero-btn .s {
-    font-size: 0.8rem;
-  }
 }
